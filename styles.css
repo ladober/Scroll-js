@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(247, 247, 150);
+}
+.scroll {
+    margin: auto;
+    max-width: 144px
+}
+
+.box {
+    overflow-x: hidden;
+    margin: 5px;
+    transform: translateX(760%);
+    transition: transform 1s ease;
+}
+
+.box:nth-child(even){
+    transform: translateX(-770%);
+}
+
+.box.show {
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+}
