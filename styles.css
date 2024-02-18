@@ -1,20 +1,20 @@
 body {
     background-color: rgb(247, 247, 150);
+    overflow-x: hidden;
 }
 .scroll {
     margin: auto;
-    max-width: 144px
+    max-width: 144px;
 }
 
 .box {
-    overflow-x: hidden;
     margin: 5px;
-    transform: translateX(760%);
+    transform: translateX(1160%);
     transition: transform 1s ease;
 }
 
 .box:nth-child(even){
-    transform: translateX(-770%);
+    transform: translateX(-1170%);
 }
 
 .box.show {
